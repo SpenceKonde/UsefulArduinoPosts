@@ -5,7 +5,7 @@ In this case the maximum value for the setting is stored in a byte called maxVal
 
 currentValueLeft and currentValueRight are declared volatile byte. 
 
-The encoders are on pins A0~A3 (PC0~PC3) on an atmega328p. Two LUT's are provided - they go in opposite directions; if it's going the wrong direction, comment out the one you're using and uncomment the other one. 
+The encoders are on pins A0-A3 (PC0-PC3) on an atmega328p. Two LUT's are provided - they go in opposite directions; if it's going the wrong direction, comment out the one you're using and uncomment the other one. 
 
 ```
 //called from setup
