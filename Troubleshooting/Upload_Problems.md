@@ -1,8 +1,6 @@
 ### What does this guide cover?
 If any of the following are not true, **STOP READING NOW, THIS GUIDE WILL NOT HELP YOU AND WILL SEND YOU DOWN WRONG PATH**.
 
-Start at the top, and go to other sections when indicated. Don't try solutions from other sections that this guide doesn't tell you to use. 
-
 * You are using an 8-bit AVR based board - Arduino Uno/Mega/Nano/ProMini, clone thereof, or a third party board with an AVR programmed over serial through a USB-serial adapter (external or on-board - such as Sanguino/Bobuino/Mighty1284p, or ATTiny with optiboot bootloader).
 * You are NOT using a board with native USB (Leonardo, Pro Micro, Micro, Digispark, Trinket). 
 * You are NOT using a board that you are programming via an ISP programmer. 
@@ -10,6 +8,9 @@ Start at the top, and go to other sections when indicated. Don't try solutions f
 * You can successfully "Verify" (compile) your sketch, but cannot "Upload" it. 
 * The board has a bootloader already installed (if starting from a virgin processor, you must have done "Burn Bootloader" with an ISP programmer successfully)
 * You are not using an Arduino Uno Wifi Rev. 2. These are new and we don't yet have a sufficient body of knowledge within the community to create a troubleshooting guide like this. 
+
+### Using this guide
+Start at the top, and go to other sections when indicated. Don't try solutions from other sections that this guide doesn't tell you to use. 
 
 If you get to an "Open Thread in Arduino Forum" step, be sure to include the following:
 * What board you are using. 
