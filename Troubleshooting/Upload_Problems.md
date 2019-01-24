@@ -12,8 +12,6 @@ Start at the top, and go to other sections when indicated. Don't try solutions f
 * You are not using an Arduino Uno Wifi Rev. 2. These are new and we don't yet have a sufficient body of knowledge within the community to create a troubleshooting guide like this. 
 
 If you get to an "Open Thread in Arduino Forum" step, be sure to include the following:
-* What board you are using. 
-* What operating system you are using.
 * The verbose upload error output (click the copy error message button to copy it to clipboard easily)
 * Put the verbose error output between [code] [/code] tags, otherwise people will make disparaging comments and tell you to read the thread on how to use the forum. 
 * A link to the product page for the board you are using, if it did not come in an official arduino box. Use the link button (chain icon) to make the link clickable. 
