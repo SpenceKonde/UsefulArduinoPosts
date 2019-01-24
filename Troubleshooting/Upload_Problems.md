@@ -1,5 +1,5 @@
 ### What does this guide cover?
-If any of the following are not true, **STOP READING NOW, THIS GUIDE WILL NOT HELP YOU AND WILL SEND YOU DOWN WRONG PATH**.
+Only use this guide if all of the following are true. If not, **STOP READING NOW, THIS GUIDE WILL NOT HELP YOU AND WILL SEND YOU DOWN WRONG PATH**.
 
 Start at the top, and go to other sections when indicated. Don't try solutions from other sections that this guide doesn't tell you to use. 
 
