@@ -23,7 +23,7 @@ If you get to an "Open Thread in Arduino Forum" step, be sure to include the fol
 
 ### Do you have the right board selected?
 1. Open the Tools -> Board submenu. Select the board you are using. 
-2. Open Tools menu - if you see new sub-menus have appeared, make sure you have selectected the correct board. 
+2. Open Tools menu - if you see new sub-menus have appeared, make sure you have made the correct selection for your board from each of them. 
 
 ### Do you have the right port selected? 
 1. Connect board to computer (via USB port for board connected via on-board serial adapter, or with external USB-serial adapter for a board without one).
