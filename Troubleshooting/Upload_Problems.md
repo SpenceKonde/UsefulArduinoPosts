@@ -4,7 +4,7 @@ Only use this guide if all of the following are true. If not, **STOP READING NOW
 * You are using an 8-bit AVR based board - Arduino Uno/Mega/Nano/ProMini, clone thereof, or a third party board with an AVR programmed over serial through a USB-serial adapter (external or on-board - such as Sanguino/Bobuino/Mighty1284p, or ATTiny with optiboot bootloader).
 * You are NOT using a board with native USB (Leonardo, Pro Micro, Micro, Digispark, Trinket). 
 * You are NOT using a board that you are programming via an ISP programmer. 
-* You are NOT using a non-AVR board! Due, Zero, MKR boards, ESP8266/ESP32, and any other third party board not based on an atmega or attiny board is NOT an AVR. 
+* You are NOT using a non-AVR board! Due, Zero, MKR boards, ESP8266/ESP32, and any other third party board not based on an atmega or attiny is NOT an AVR. 
 * You can successfully "Verify" (compile) your sketch, but cannot "Upload" it. 
 * The board has a bootloader already installed (if starting from a virgin processor, you must have done "Burn Bootloader" with an ISP programmer successfully)
 * You are not using an Arduino Uno Wifi Rev. 2. These are new and we don't yet have a sufficient body of knowledge within the community to create a troubleshooting guide like this. 
@@ -39,9 +39,11 @@ If you get to an "Open Thread in Arduino Forum" step, be sure to include the fol
 
 ### Access Denied
 1. Another program may be using the serial port. Make sure any programs that might attempt to use the serial port are closed.
-2. If using Linux, access to serial ports is restricted, and by default users do not have access to them. Add your user to the "dialout" group and try again. 
-3. Some unusual programs (often "modem managers" that run in the background, or background programs intended for working with other serial devices) may connect to any serial port connected, assuming that it is a modem, or whatever serial device the program was intended to work with. You must close this program before using your Arduino (and unless you actually use it, you should uninstall it). 
-4. If still experiencing this problem, post to Installation/Troubleshooting section of the Arduino Forums. 
+2. Some unusual programs (often "modem managers" that run in the background, or background programs intended for working with other serial devices) may connect to any serial port connected, assuming that it is a modem, or whatever serial device the program was intended to work with. You must close this program before using your Arduino (and unless you actually use it, you should uninstall it). 
+3. If still experiencing this problem, post to Installation/Troubleshooting section of the Arduino Forums. 
+
+### Permission Denied (unix only)
+1. If using Linux, access to serial ports is restricted, and by default users do not have access to them. Add your user to the "dialout" group, restart the IDE, and try again. 
 
 ### STK500 Sync Error
 Unfortunately, this is a very generic error message - it essentially means "Found a serial port, but board gave the wrong response" 
