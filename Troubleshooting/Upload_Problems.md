@@ -13,8 +13,14 @@ Only use this guide if all of the following are true. If not, **STOP READING NOW
 Start at the top, and go to other sections when indicated. Don't try solutions from other sections that this guide doesn't tell you to use. 
 
 If you get to an "Open Thread in Arduino Forum" step, be sure to include the following:
-* The verbose upload error output (click the copy error message button to copy it to clipboard easily)
-* Put the verbose error output between [code] [/code] tags, otherwise people will make disparaging comments and tell you to read the thread on how to use the forum. 
+* The verbose upload error output, following these instructions:
+  * (In the Arduino IDE) File > Preferences
+  * Check the box next to "Show verbose output during: upload".
+  * Click "OK".
+  * Sketch > Upload
+  * After the upload fails you'll see a button on the right side of the orange bar "Copy error messages". Click that button.
+  * On the Forum post, click the code tags button on the toolbar (looks like **</>**).
+  * Paste the error messages between the code tags. If the error exceeds the forum's 9000 character limit, save it to a text file and post the file as an attachment.
 * A link to the product page for the board you are using, if it did not come in an official arduino box. Use the link button (chain icon) to make the link clickable. 
 * List the troubleshooting steps you have taken.
 * If you are using a board that requires a third party hardware package, link to where you got it from. Use the Link button to make the link clickable. 
