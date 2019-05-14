@@ -70,3 +70,27 @@ Serial.println(reinterpret_cast<const __FlashStringHelper *>(pgm_read_word_near(
 Serial.println(FLASH_STRING(modesL[1][3])); //same thing, but much cleaner using above macro
 
 ```
+
+
+## PROGMEM array of constant-length PROGMEM strings
+
+The above method uses an array of pointers to strings. If all the strings have the same length, we can instead use a real array of strings, i.e. an array of NUL-terminated arrays of chars (a 2D array of chars). Then the intermediate string variables are not needed anymore, and we don't have to store the array of pointers:
+
+```c++
+const char modesL[][8] PROGMEM = {
+    "  RED  ",
+    " GREEN ",
+    "  BLUE ",
+    " WHITE "
+};
+```
+
+Printing:
+
+```c++
+Serial.println(reinterpret_cast<const __FlashStringHelper *>(modesL[3])); //prints " WHITE ";
+
+#define FLASH_STRING(flashptr) (reinterpret_cast<const __FlashStringHelper *>(flashptr))
+
+Serial.println(FLASH_STRING(modesL[3])); //same thing, but much cleaner using above macro
+```
