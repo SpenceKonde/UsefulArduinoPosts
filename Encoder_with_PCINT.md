@@ -7,7 +7,7 @@ currentValueLeft and currentValueRight are declared volatile byte.
 
 The encoders are on pins A0-A3 (PC0-PC3) on an atmega328p. Two LUT's are provided - they go in opposite directions; if it's going the wrong direction, comment out the one you're using and uncomment the other one. 
 
-```
+```c++
 //called from setup
 void setupPCINT() {
   PCMSK1 = 0x0F;
