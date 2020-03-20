@@ -1,4 +1,5 @@
 // call in setup, passing frequency as argument, second argument should be 0 for normal fast pwm (single ramp), or 1 for phase correct, 2 for phase and frequency correct.
+```
 void initPWM(unsigned long freq,byte rampmode) {
 	//calculate TOP
 	unsigned long clockspercycle=(F_CPU/freq);
@@ -23,7 +24,6 @@ void initPWM(unsigned long freq,byte rampmode) {
 	TCCR5A=0x03&wgm; //set low bits of WGM 
 	TCCR5B=((wgm<<3)&0x18)|presc; //set rest of WGM, prescaler and start timer
 }
-
 //8-bit resolution, like analogWrite()
 void setPWMDutyCycle8Bit(byte pin,byte dutycycle) {
 	unsigned int ocrval=map(dutycycle,0,255,0,ICR5)
@@ -92,3 +92,4 @@ void setDutyCycleHiRes(byte pin,unsigned int dutycycle) {
 	pinMode(pin,OUTPUT);
 }
 */
+```
