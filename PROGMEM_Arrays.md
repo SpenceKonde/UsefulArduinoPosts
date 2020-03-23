@@ -1,3 +1,10 @@
+### PROGMEM is not needed on megaavr
+This page is not relevant if you are using a megaavr part. The megaavr product line currently includes the TinyAVR 0-series and 1-series parts (supported on Arduino by my megaTinyCore https://github.com/SoenceKonde/megaTinyCore ) and the MegaAVR 0-series (used in the official Uno WiFi Rev. 2, and supported for the whole product line via https://github.com/MCUdude/MegaCoreX ). Parts not based on the AVR architecture may use different methods to mark constants as belonging on flash rather than in RAM. The unified address space is one of the most compelling advantages to using the megaavr product line.
+
+In any event, the megaavr parts have a unified address space, so no special instruction is required to read data that is stored on flash instead of in SRAM. Because of this, the compiler can automatically put all variables declared `const` into flash without an explicit `PROGMEM` declaration. You can still declare variables as `PROGMEM` - though there is no reduction ro memory usage if you do - but if you do this, you must still the `pgm_read_...` macros to read it. 
+
+Behind the scenes, the flash starts at either 0x8000 (for tinies) or 0x4000 (for megas). If the variable was declared PROGMEM, the pointer be referenced to the start of the flash section. You can examine the addresses that the variables point to in order to demonstrate this - If you are curious about this, I recommend it..
+
 ### Basic PROGMEM array
 
 ```c++
