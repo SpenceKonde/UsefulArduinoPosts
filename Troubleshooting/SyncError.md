@@ -14,6 +14,7 @@ There are a huge number of possible causes.
 
 Assuming the board is known to have worked previously: 
 * Incorrect board selected from Tools -> Board
+* 
 
 
 If the board has not been used successfully yet, there are a few additional possibilities: 
