@@ -1,0 +1,32 @@
+Name                |Address | type | size   |  Section
+--------------------|--------|------|--------|--------
+__do_clear_bss      |00000042|NOTYPE|00000010|.text     <prepare global vars
+__do_global_ctors   |00000052|NOTYPE|00000014|.text     <same
+UartClass::available|0000006c|  FUNC|0000001e|.text     <--All pulled in because they are declared virtual
+UartClass::read()   |0000008a|  FUNC|00000028|.text
+UartClass::peek()   |000000b2|  FUNC|0000001c|.text
+UartClass::available|000000ce|  FUNC|00000016|.text
+UartClass::end()    |000000e4|  FUNC|00000032|.text
+UartClass::_tx_data_|00000116|  FUNC|0000005a|.text
+UartClass::_poll_tx_|00000170|  FUNC|00000024|.text
+UartClass::write(uns|00000194|  FUNC|00000064|.text
+UartClass::flush()  |000001f8|  FUNC|00000028|.text
+Print::write(unsigne|00000220|  FUNC|0000005a|.text
+UartClass::operator |0000027a|  FUNC|00000004|.text
+UartClass::begin(uns|0000027e|  FUNC|00000012|.text
+UartClass::begin(uns|00000290|  FUNC|00000154|.text
+__vector_14         |000003e4|  FUNC|000000ac|.text   <--- <millis interrupt
+__vector_23         |00000490|  FUNC|0000004a|.text   <--- <UART interrupt
+__vector_22         |000004da|  FUNC|0000005c|.text   <----<UART interrupot
+main                |00000536|  FUNC|0000007a|.text   <--- Notice no setup, loop, init function; inlined into main
+_GLOBAL__sub_I___vec|000005b0|  FUNC|0000004c|.text
+__udivmodsi4        |000005fc|NOTYPE|00000044|.text   <division routine for millis timekeeping
+__tablejump2__      |00000640|NOTYPE|0000000c|.text
+vtable for UartClass|00008650|OBJECT|0000001a|.rodata    <-pin info
+digital_pin_to_bit_p|0000866a|OBJECT|00000006|.rodata    <-pin info
+digital_pin_to_port |00008670|OBJECT|00000006|.rodata    <-pin info
+digital_pin_to_bit_m|00008676|OBJECT|00000006|.rodata    <-pin info
+Serial              |00803f00|OBJECT|0000003b|.bss(ram)  <-the object itself
+timer_overflow_count|00803f3b|OBJECT|00000004|.bss(ram)
+timer_fract         |00803f3f|OBJECT|00000002|.bss(ram)
+timer_millis        |00803f41|OBJECT|00000004|.bss(ram)

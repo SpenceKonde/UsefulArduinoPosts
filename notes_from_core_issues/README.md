@@ -1,0 +1,1 @@
+These may not be particularly "Useful" (and the useful stuff will get moved to my main avr guidance repo when I have time). It's for things relating to isssues that people have reported which I would attach to the issue, but github doesn't support attaching .hex, or .lst. or lots of other relevant filetypes. If only we had something with the needs of developers in mind *eyeroll*
