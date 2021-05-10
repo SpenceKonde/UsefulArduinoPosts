@@ -1,8 +1,8 @@
 Name                |Address | type | size   |  Section
 --------------------|--------|------|--------|--------
-__do_clear_bss      |00000042|NOTYPE|00000010|.text     <prepare global vars
-__do_global_ctors   |00000052|NOTYPE|00000014|.text     <same
-UartClass::available|0000006c|  FUNC|0000001e|.text     <--All pulled in because they are declared virtual
+__do_clear_bss      |00000042|NOTYPE|00000010|.text   <--prepare global vars
+__do_global_ctors   |00000052|NOTYPE|00000014|.text   <--same
+UartClass::available|0000006c|  FUNC|0000001e|.text   <--All pulled in because they are declared virtual
 UartClass::read()   |0000008a|  FUNC|00000028|.text
 UartClass::peek()   |000000b2|  FUNC|0000001c|.text
 UartClass::available|000000ce|  FUNC|00000016|.text
